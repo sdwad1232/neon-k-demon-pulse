@@ -1,33 +1,10 @@
-import { Music, Video, Calendar, PenTool, ExternalLink, Clock, MapPin } from "lucide-react";
+import { Video, Calendar, PenTool, ExternalLink, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import StrayKidsGame from "./StrayKidsGame";
 
 const ContentSections = () => {
-  const musicNews = [
-    {
-      title: "Stray Kids Announces World Tour 2024",
-      excerpt: "Get ready for the most epic performances across 30 cities worldwide!",
-      date: "2 hours ago",
-      category: "Stray Kids",
-      theme: "stray-kids"
-    },
-    {
-      title: "BLACKPINK's Rosé Drops Solo Teaser",
-      excerpt: "New solo music coming this fall with a stunning visual concept.",
-      date: "5 hours ago",
-      category: "BLACKPINK",
-      theme: "blackpink"
-    },
-    {
-      title: "Demon's Hunters Season 2 Confirmed",
-      excerpt: "Netflix announces the highly anticipated return of the supernatural thriller series.",
-      date: "1 day ago",
-      category: "Netflix",
-      theme: "demon"
-    }
-  ];
-
   const videos = [
     {
       title: "MANIAC Dance Practice",
@@ -96,45 +73,8 @@ const ContentSections = () => {
 
   return (
     <div className="py-16 space-y-24">
-      {/* Latest News */}
-      <section id="music" className="container mx-auto px-4 lg:px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-glow-neon mb-4">
-            Latest News
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            Stay updated with the freshest content from your favorites
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {musicNews.map((news, index) => (
-            <Card key={index} className="group hover:glow-neon transition-all duration-300 bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 animate-slide-in-left" style={{ animationDelay: `${index * 0.1}s` }}>
-              <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <Badge variant="secondary" className={news.theme === 'stray-kids' ? 'bg-stray-kids-red text-white' : news.theme === 'blackpink' ? 'bg-blackpink-pink text-white' : 'bg-neon-cyan text-background'}>
-                    {news.category}
-                  </Badge>
-                  <span className="text-xs text-muted-foreground flex items-center">
-                    <Clock className="w-3 h-3 mr-1" />
-                    {news.date}
-                  </span>
-                </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                  {news.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">{news.excerpt}</p>
-                <Button variant="outline" className="w-full neon-border">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Read More
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
+      {/* Stray Kids Game */}
+      <StrayKidsGame />
 
       {/* Videos */}
       <section id="videos" className="container mx-auto px-4 lg:px-6">
