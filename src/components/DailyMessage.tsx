@@ -4,36 +4,111 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const DailyMessage = () => {
-  const [currentMessage, setCurrentMessage] = useState("");
+  const [currentMessage, setCurrentMessage] = useState({ text: "", author: "" });
   const [messageType, setMessageType] = useState("");
 
   const messages = {
     "stray-kids": [
-      "Chase your dreams like Stray Kids chase the stage - with endless passion! 🔥",
-      "Stay strong, stay authentic, just like our boys taught us! 💪",
-      "Every challenge is a step closer to your breakthrough moment! ⭐",
-      "Create your own path and let your unique voice shine bright! 🌟",
-      "Together we're stronger - teamwork makes the dream work! 🤝",
-      "Embrace your differences, they make you extraordinary! ✨",
-      "Keep fighting for what you believe in, never give up! 💫"
+      {
+        text: "Chase your dreams like Stray Kids chase the stage - with endless passion! 🔥",
+        author: "Bang Chan"
+      },
+      {
+        text: "Stay strong, stay authentic, just like our boys taught us! 💪",
+        author: "Lee Know"
+      },
+      {
+        text: "Every challenge is a step closer to your breakthrough moment! ⭐",
+        author: "Changbin"
+      },
+      {
+        text: "Create your own path and let your unique voice shine bright! 🌟",
+        author: "Hyunjin"
+      },
+      {
+        text: "Together we're stronger - teamwork makes the dream work! 🤝",
+        author: "Han"
+      },
+      {
+        text: "Embrace your differences, they make you extraordinary! ✨",
+        author: "Felix"
+      },
+      {
+        text: "Keep fighting for what you believe in, never give up! 💫",
+        author: "Seungmin"
+      },
+      {
+        text: "Music is our way of connecting hearts across the world! 🎵",
+        author: "I.N"
+      }
     ],
     "blackpink": [
-      "Confidence is your best accessory - wear it proudly! 👑",
-      "Be fierce, be fabulous, be unapologetically YOU! 💖",
-      "Self-love is the greatest revolution you can start! 🌹",
-      "Shine bright like the queen you are meant to be! ✨",
-      "Your worth isn't defined by others - you're already enough! 💎",
-      "Elegance is an attitude, kindness is a superpower! 🦋",
-      "Break barriers and rewrite the rules with grace! 🌸"
+      {
+        text: "Confidence is your best accessory - wear it proudly! 👑",
+        author: "Jennie"
+      },
+      {
+        text: "Be fierce, be fabulous, be unapologetically YOU! 💖",
+        author: "Lisa"
+      },
+      {
+        text: "Self-love is the greatest revolution you can start! 🌹",
+        author: "Rosé"
+      },
+      {
+        text: "Shine bright like the queen you are meant to be! ✨",
+        author: "Jisoo"
+      },
+      {
+        text: "Your worth isn't defined by others - you're already enough! 💎",
+        author: "Jennie"
+      },
+      {
+        text: "Elegance is an attitude, kindness is a superpower! 🦋",
+        author: "Rosé"
+      },
+      {
+        text: "Break barriers and rewrite the rules with grace! 🌸",
+        author: "Lisa"
+      },
+      {
+        text: "Stay true to yourself, that's when you're most beautiful! 💕",
+        author: "Jisoo"
+      }
     ],
     "demon": [
-      "Face your demons with courage - you're stronger than you think! ⚔️",
-      "In darkness, be the light that guides others home! 🕯️",
-      "Every battle teaches you something about your inner strength! 🛡️",
-      "Protect what matters most with unwavering determination! 🔥",
-      "Heroes aren't born, they're forged through challenges! 🗡️",
-      "Stand up for justice, even when it's difficult! ⚡",
-      "Your past doesn't define you - your choices do! 🌟"
+      {
+        text: "Face your demons with courage - you're stronger than you think! ⚔️",
+        author: "Tanjiro Kamado"
+      },
+      {
+        text: "In darkness, be the light that guides others home! 🕯️",
+        author: "Nezuko Kamado"
+      },
+      {
+        text: "Every battle teaches you something about your inner strength! 🛡️",
+        author: "Giyu Tomioka"
+      },
+      {
+        text: "Protect what matters most with unwavering determination! 🔥",
+        author: "Kyojuro Rengoku"
+      },
+      {
+        text: "Heroes aren't born, they're forged through challenges! 🗡️",
+        author: "Inosuke Hashibira"
+      },
+      {
+        text: "Stand up for justice, even when it's difficult! ⚡",
+        author: "Zenitsu Agatsuma"
+      },
+      {
+        text: "Your past doesn't define you - your choices do! 🌟",
+        author: "Sanemi Shinazugawa"
+      },
+      {
+        text: "Compassion is the strongest weapon against hatred! 💙",
+        author: "Mitsuri Kanroji"
+      }
     ]
   };
 
@@ -113,9 +188,15 @@ const DailyMessage = () => {
                 </div>
               </div>
               
-              <blockquote className={`text-xl md:text-2xl lg:text-3xl font-medium ${themeClasses.textGlow} mb-8 leading-relaxed`}>
-                "{currentMessage}"
+              <blockquote className={`text-xl md:text-2xl lg:text-3xl font-medium ${themeClasses.textGlow} mb-4 leading-relaxed`}>
+                "{currentMessage.text}"
               </blockquote>
+              
+              <div className="text-right mb-8">
+                <cite className="text-lg font-semibold text-neon-cyan not-italic">
+                  — {currentMessage.author}
+                </cite>
+              </div>
               
               <div className="flex items-center justify-center space-x-4">
                 <Sparkles className="w-5 h-5 text-neon-cyan animate-pulse" />
