@@ -79,35 +79,35 @@ const DailyMessage = () => {
     "demon": [
       {
         text: "Face your demons with courage - you're stronger than you think! ⚔️",
-        author: "Tanjiro Kamado"
+        author: "Netflix's Demon Hunters"
       },
       {
         text: "In darkness, be the light that guides others home! 🕯️",
-        author: "Nezuko Kamado"
+        author: "Demon Hunters Cast"
       },
       {
         text: "Every battle teaches you something about your inner strength! 🛡️",
-        author: "Giyu Tomioka"
+        author: "Netflix Series"
       },
       {
         text: "Protect what matters most with unwavering determination! 🔥",
-        author: "Kyojuro Rengoku"
+        author: "Demon Hunters"
       },
       {
         text: "Heroes aren't born, they're forged through challenges! 🗡️",
-        author: "Inosuke Hashibira"
+        author: "Netflix Drama"
       },
       {
         text: "Stand up for justice, even when it's difficult! ⚡",
-        author: "Zenitsu Agatsuma"
+        author: "Demon Hunters Series"
       },
       {
         text: "Your past doesn't define you - your choices do! 🌟",
-        author: "Sanemi Shinazugawa"
+        author: "Netflix Original"
       },
       {
-        text: "Compassion is the strongest weapon against hatred! 💙",
-        author: "Mitsuri Kanroji"
+        text: "Compassion is the strongest weapon against darkness! 💙",
+        author: "Demon Hunters Cast"
       }
     ]
   };

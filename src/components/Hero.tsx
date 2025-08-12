@@ -33,8 +33,8 @@ const Hero = () => {
     {
       id: 3,
       title: "DEMON'S HUNTERS",
-      subtitle: "Dark. Action. Mystery.",
-      description: "Dive into the thrilling world of supernatural battles, compelling characters, and cinematic storytelling.",
+      subtitle: "Dark. Thrilling. Netflix Original.",
+      description: "Experience the intense supernatural thriller that's captivating audiences worldwide on Netflix.",
       image: demonsHuntersImage,
       theme: "demon",
       gradient: "bg-gradient-demon",

@@ -20,11 +20,11 @@ const ContentSections = () => {
       theme: "blackpink"
     },
     {
-      title: "Behind the Scenes: Latest Music Video",
-      excerpt: "Exclusive footage from the making of the newest collaboration.",
+      title: "Demon's Hunters Season 2 Confirmed",
+      excerpt: "Netflix announces the highly anticipated return of the supernatural thriller series.",
       date: "1 day ago",
-      category: "General",
-      theme: "general"
+      category: "Netflix",
+      theme: "demon"
     }
   ];
 
@@ -88,9 +88,9 @@ const ContentSections = () => {
     },
     {
       title: "Demon's Hunters: Character Development Analysis",
-      excerpt: "How our favorite characters have evolved throughout the series.",
+      excerpt: "How the Netflix series masterfully develops its supernatural characters throughout the thriller.",
       readTime: "6 min read",
-      author: "SeriesFan"
+      author: "NetflixFan"
     }
   ];
 
